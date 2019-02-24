@@ -1,0 +1,20 @@
+int ledPin=8;
+
+ void setup() {
+pinMode(ledPin,OUTPUT);
+}
+void led(int timer)
+{
+  digitalWrite(ledPin,HIGH);
+  delay(timer);
+  digitalWrite(ledPin,LOW);
+  delay(timer);
+}
+ void loop() {
+    led(200); led(200); led(200); // S
+    delay(300); 
+    led(500); led(500); led(500); // O
+    led(200); led(200); led(200); // S
+    delay(1300);
+    
+}
